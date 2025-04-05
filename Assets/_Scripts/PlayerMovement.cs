@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "Coletavel")
         {
+            //as_audio.Play();
+            GameControler.Collect();
             Destroy(other.gameObject);
         }
     }
