@@ -2,18 +2,19 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject endGamePanel;
+    private GameTimer gameTimer;
+
     void Start()
     {
-        
+        gameTimer = FindObjectOfType<GameTimer>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        if (GameControler.gameOver)
+        if (GameControler.gameOver || GameTimer.TimeOver)
         {
+            gameTimer.StopTimer();
             endGamePanel.SetActive(true);
         }
     }
