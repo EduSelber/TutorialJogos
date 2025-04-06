@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Coletavel
+  - Wall
+  - WallHorizontal
+  - WallVertical
+  - WallHorizontalUp
   layers:
   - Default
   - TransparentFX
