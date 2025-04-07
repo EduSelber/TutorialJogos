@@ -473,6 +473,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4411201993897907385, guid: 318d3cb9d29d3d741932203a17de77fb, type: 3}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5884437576736910905, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
       propertyPath: m_Name
       value: Triangle (1)
@@ -1503,6 +1519,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4411201993897907385, guid: 318d3cb9d29d3d741932203a17de77fb, type: 3}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5884437576736910905, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
       propertyPath: m_Name
       value: Triangle (2)
@@ -1792,6 +1824,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4411201993897907385, guid: 318d3cb9d29d3d741932203a17de77fb, type: 3}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5884437576736910905, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
       propertyPath: m_Name
       value: Triangle (3)
@@ -2500,6 +2548,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4411201993897907385, guid: 318d3cb9d29d3d741932203a17de77fb, type: 3}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 42963111406565492, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
     - target: {fileID: 5443358851608117063, guid: 601628f9801b2694daa0a2da6b9221ef, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -2610,6 +2674,38 @@ PrefabInstance:
     - target: {fileID: 2199083091740728507, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Size.x
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Size.y
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157c4ad982147114e849f1177453f449, type: 3}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667766677560896631, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816948252507760424, guid: b78d35bd9fd5e6646a607e7466b120de, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
