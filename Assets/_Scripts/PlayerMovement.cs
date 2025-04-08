@@ -34,5 +34,10 @@ public class PlayerMovement : MonoBehaviour
             GameControler.Collect();
             Destroy(other.gameObject);
         }
+        if (other.tag == "Reporter")
+        {
+            GameControler.CaptureReporter();
+            
+        }
     }
 }

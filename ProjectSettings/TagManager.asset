@@ -9,6 +9,7 @@ TagManager:
   - WallHorizontal
   - WallVertical
   - WallHorizontalUp
+  - Reporter
   layers:
   - Default
   - TransparentFX

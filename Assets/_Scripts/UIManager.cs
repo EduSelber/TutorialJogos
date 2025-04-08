@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameControler.gameOver || GameTimer.TimeOver)
+        if (GameControler.gameOver || GameTimer.TimeOver || GameControler.CapturedReporter)
         {
             gameTimer.StopTimer();
             endGamePanel.SetActive(true);
