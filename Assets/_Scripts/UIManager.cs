@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        gameTimer = FindObjectOfType<GameTimer>();
+        gameTimer = Object.FindFirstObjectByType<GameTimer>();
     }
 
     void FixedUpdate()

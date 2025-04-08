@@ -4,14 +4,15 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private ScoreManager scoreManager;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
-}
+        scoreManager = Object.FindFirstObjectByType<ScoreManager>();
+    }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -22,12 +23,13 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
     }
 
-    private void  OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Coletavel")
         {
-            //as_audio.Play();
+            // as_audio.Play();
             GameControler.Collect();
+            scoreManager.AddScore();
             Destroy(other.gameObject);
         }
     }
