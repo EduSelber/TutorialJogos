@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    AudioSource audio;
     public float speed;
 
     private ScoreManager scoreManager;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         scoreManager = Object.FindFirstObjectByType<ScoreManager>();
+        audio = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -27,9 +29,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "Coletavel")
         {
-            // as_audio.Play();
-            GameControler.Collect();
+            audio.Play();
             scoreManager.AddScore();
+            GameControler.Collect();
             Destroy(other.gameObject);
         }
     }

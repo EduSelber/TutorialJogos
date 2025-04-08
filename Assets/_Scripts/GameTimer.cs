@@ -29,7 +29,7 @@ public class GameTimer : MonoBehaviour
         if (timeRemaining <= 0 && isRunning)
         {
             isRunning = false;
-            OnTimerEnd(); // chama algo quando o tempo acabar
+            OnTimerEnd(); 
         }
     }
 
@@ -44,7 +44,7 @@ public class GameTimer : MonoBehaviour
     {
         Debug.Log("Tempo esgotado!");
         TimeOver = true;
-        // Aqui você pode adicionar lógica extra, tipo GameOver();
+        
     }
 
     public void StopTimer()
