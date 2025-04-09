@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    AudioSource audio;
+    private AudioSource audio;
+    private AudioSource audio1;
     public float speed;
 
     private ScoreManager scoreManager;
@@ -12,7 +13,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         scoreManager = Object.FindFirstObjectByType<ScoreManager>();
-        audio = GetComponent<AudioSource>();
+
+        AudioSource[] audios = GetComponents<AudioSource>(); 
+        audio = audios[0];
+        audio1 = audios[1];
     }
 
     void FixedUpdate()
@@ -27,17 +31,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Coletavel")
+        if (other.tag == "Coletavel" && (!GameControler.gameOver && !GameTimer.TimeOver && !GameControler.CapturedReporter))
         {
             audio.Play();
             scoreManager.AddScore();
             GameControler.Collect();
             Destroy(other.gameObject);
         }
-        if (other.tag == "Reporter")
+        if (other.tag == "Reporter" && (!GameControler.gameOver && !GameTimer.TimeOver && !GameControler.CapturedReporter))
         {
+            audio1.Play();
             GameControler.CaptureReporter();
-            
         }
     }
 }

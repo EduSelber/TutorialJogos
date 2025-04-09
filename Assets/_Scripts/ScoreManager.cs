@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     private int scoreFinal = 0;
 
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI TempscoreText;
     public TextMeshProUGUI BonusText;
     public TextMeshProUGUI ScoreFinal;
 
@@ -36,6 +37,7 @@ public class ScoreManager : MonoBehaviour
         if (!GameControler.gameOver && !GameTimer.TimeOver && !GameControler.CapturedReporter)
         {
             score += 100;
+            if (TempscoreText != null) TempscoreText.text = $"{score}";
         }
     }
 
@@ -55,6 +57,7 @@ public class ScoreManager : MonoBehaviour
         if (scoreText != null) scoreText.text = $"{score}";
         if (BonusText != null) BonusText.text = $"{bonus}";
         if (ScoreFinal != null) ScoreFinal.text = $"{scoreFinal}";
+        if (TempscoreText != null) TempscoreText.text = $"{score}";
     }
 
     public int GetFinalScore() => scoreFinal;
