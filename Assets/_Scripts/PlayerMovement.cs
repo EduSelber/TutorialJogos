@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,25 +9,42 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
 
     private ScoreManager scoreManager;
+    private PlayerControls_Valid controls;
+    private Vector2 moveInput;
+
+    void Awake()
+    {
+        controls = new PlayerControls_Valid();
+
+        // Sempre que houver input, atualiza a variável moveInput
+        controls.Gameplay.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        controls.Gameplay.Move.canceled += ctx => moveInput = Vector2.zero;
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         scoreManager = Object.FindFirstObjectByType<ScoreManager>();
 
-        AudioSource[] audios = GetComponents<AudioSource>(); 
+        AudioSource[] audios = GetComponents<AudioSource>();
         audio = audios[0];
         audio1 = audios[1];
     }
 
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-
-        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        // Aplica o movimento com a velocidade e direção
+        rb.MovePosition(rb.position + moveInput.normalized * speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
             GameControler.Collect();
             Destroy(other.gameObject);
         }
+
         if (other.tag == "Reporter" && (!GameControler.gameOver && !GameTimer.TimeOver && !GameControler.CapturedReporter))
         {
             audio1.Play();
