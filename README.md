@@ -26,3 +26,8 @@
 - Tema ajustado para **policial**, com estilo visual cartunesco.
 - Arena modificada com fundo temático correspondente.
 - Desafio adicional implementado: o jogador precisa **evitar capturar repórteres quadrados** enquanto captura os bandidos.
+
+### Crédito
+
+O arquivo `.gitignore` deste projeto foi baseado no modelo oficial para Unity disponibilizado pelo repositório [github/gitignore](https://github.com/github/gitignore).  
+Link direto para o arquivo utilizado: [Unity.gitignore](https://github.com/github/gitignore/blob/main/Unity.gitignore)
