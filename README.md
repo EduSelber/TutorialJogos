@@ -29,5 +29,8 @@
 
 ### Crédito
 
-O arquivo `.gitignore` deste projeto foi baseado no modelo oficial para Unity disponibilizado pelo repositório [github/gitignore](https://github.com/github/gitignore).  
+- O arquivo `.gitignore` deste projeto foi baseado no modelo oficial para Unity disponibilizado pelo repositório [github/gitignore](https://github.com/github/gitignore).  
 Link direto para o arquivo utilizado: [Unity.gitignore](https://github.com/github/gitignore/blob/main/Unity.gitignore)
+
+- As imagens utilizadas neste projeto foram geradas com o DALL·E do ChatGPT.
+
